@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # Set the directory where your photos are located
-photos_directory="path/to/photos"
+photos_directory="$1"
 
 # Set the prefix for the renamed files
-file_prefix="$1"
+file_prefix="$2"
 
 # Change to the photos directory
 cd "$photos_directory" || exit
