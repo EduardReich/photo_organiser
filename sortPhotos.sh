@@ -1,4 +1,3 @@
-```bash
 #!/bin/bash
 
 # Set the directory where your photos are located
@@ -27,4 +26,3 @@ for photo in $sorted_photos; do
     echo "Renamed $photo to $new_name"
     let counter++
 done
-```
