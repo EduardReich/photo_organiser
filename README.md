@@ -6,7 +6,7 @@ This script is a bash utility designed to help you rename and organize your phot
 Before running this script, make sure you have the following prerequisites installed on your system:
 
   * __'bash'__: The script is written in bash, so you need a bash-compatible shell environment.
-  
+
   * __'exiftool'__: This tool is used to extract the creation date of the photos. Make sure you have it installed and available in your system's PATH.
 
 ## How to Use ##
@@ -20,8 +20,13 @@ Before running this script, make sure you have the following prerequisites insta
 3. Make the Script Executable: Ensure the script has executable permissions. If it doesn't, you can set the permissions using the following command:
   `chmod +x photo_organiser.sh`
 4. Run the Script: Open your terminal, navigate to the directory containing the script, and execute it with the following command:
-  `./photo_renamer.sh`
+  `./photo_organizer.sh /path/to/photos_directory file_prefix`
+   Replace /path/to/photos_directory with the actual directory where your photos are located and file_prefix with the desired prefix you want to use for the renamed files.
    The script will automatically change to the photos_directory, process the photos, and rename them based on their creation date and the specified file_prefix.
+
+   Example:
+
+   `./photo_organiser.sh /home/user/photos ConcertAlbatros`
 5. Review the Output: The script will display the renaming process, showing the old and new names of each photo. Please review the output to ensure everything is renamed correctly.
 
 ## Important Notes ##
