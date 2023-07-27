@@ -4,7 +4,7 @@
 photos_directory="path/to/photos"
 
 # Set the prefix for the renamed files
-file_prefix=""
+file_prefix="$1"
 
 # Change to the photos directory
 cd "$photos_directory" || exit
