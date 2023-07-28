@@ -1,4 +1,4 @@
-# Photo Organiser Script #
+# Photo Organizer Script #
 This script is a bash utility designed to help you rename and organize your photos based on their creation date.  It provides an easy way to rename multiple photo files in a specific directory and sort them chronologically. This can be useful for better organizing your photo collection or preparing them for further processing.
 
 ## Prerequisites ##
@@ -11,22 +11,28 @@ Before running this script, make sure you have the following prerequisites insta
 
 ## How to Use ##
 
-1. Download the Script: First, download the photo_organiser.sh script from this repository and place it in your desired location.
-2. Adjust Configuration: Open the photo_organiser.sh script in a text editor and configure the following variables according to your requirements:
+1. Clone the Repository
+    First, clone this repository to your local machine using the following command:
 
-  * photos_directory: Set the path to the directory where your photos are located.
-  * file_prefix: Set the prefix you want to add to the renamed files. Leave it empty if you don't want any prefix.
+    `git clone https://github.com/EduardReich/photo_organiser.git`
 
-3. Make the Script Executable: Ensure the script has executable permissions. If it doesn't, you can set the permissions using the following command:
-  `chmod +x photo_organiser.sh`
-4. Run the Script: Open your terminal, navigate to the directory containing the script, and execute it with the following command:
-  `./photo_organizer.sh /path/to/photos_directory file_prefix`
+2. Makefile
+
+    Additionally, a Makefile is provided to facilitate the installation and uninstallation of the script.
+
+    To install the script system-wide, use the following command: `make install`
+
+    By default, the script will be copied to /usr/local/bin. You can modify the DESTINATION variable in the Makefile if you want to install it in a different location.
+
+3. Run the Script: Open your terminal, navigate to the directory containing the script, and execute it with the following command:
+  `sortPhotos.sh /path/to/photos_directory file_prefix`
    Replace /path/to/photos_directory with the actual directory where your photos are located and file_prefix with the desired prefix you want to use for the renamed files.
    The script will automatically change to the photos_directory, process the photos, and rename them based on their creation date and the specified file_prefix.
 
    Example:
 
-   `./photo_organiser.sh /home/user/photos ConcertAlbatros`
+   `sortPhotos.sh /home/user/photos ConcertAlbatros`
+
 5. Review the Output: The script will display the renaming process, showing the old and new names of each photo. Please review the output to ensure everything is renamed correctly.
 
 ## Important Notes ##
