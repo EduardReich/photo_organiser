@@ -14,24 +14,27 @@ Before running this script, make sure you have the following prerequisites insta
 1. Clone the Repository
     First, clone this repository to your local machine using the following command:
 
-    `git clone https://github.com/EduardReich/photo_organiser.git`
+      `git clone https://github.com/EduardReich/photo_organiser.git`
 
 2. Makefile
 
-    Additionally, a Makefile is provided to facilitate the installation and uninstallation of the script.
+    A Makefile is provided to facilitate the installation and uninstallation of the script.
 
     To install the script system-wide, use the following command: `make install`
 
     By default, the script will be copied to /usr/local/bin. You can modify the DESTINATION variable in the Makefile if you want to install it in a different location.
 
-3. Run the Script: Open your terminal, navigate to the directory containing the script, and execute it with the following command:
-  `sortPhotos.sh /path/to/photos_directory file_prefix`
+3. Run the Script:
+    Open your terminal and execute it with the following command:
+
+      `sortPhotos.sh /path/to/photos_directory file_prefix`
+
    Replace /path/to/photos_directory with the actual directory where your photos are located and file_prefix with the desired prefix you want to use for the renamed files.
    The script will automatically change to the photos_directory, process the photos, and rename them based on their creation date and the specified file_prefix.
 
    Example:
 
-   `sortPhotos.sh /home/user/photos ConcertAlbatros`
+      `sortPhotos.sh /home/user/photos ConcertAlbatros`
 
 5. Review the Output: The script will display the renaming process, showing the old and new names of each photo. Please review the output to ensure everything is renamed correctly.
 
